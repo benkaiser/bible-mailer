@@ -9,10 +9,12 @@ web:
   dockerfile: Dockerfile.local
   environment:
     PORT: 3000
-    DATABASE_URL: 'db:27017/geohash-notifier'
+    DATABASE_URL: 'db:27017/bible-mailer'
+    APP_URL: 'http://localhost:3000'
   links:
     - db
   ports:
     - "3000:3000"
   volumes:
     - .:/app
+    - /app/node_modules

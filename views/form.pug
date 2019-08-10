@@ -1,0 +1,22 @@
+extends layout.pug
+
+block content
+  h1 Bible Mailer Service
+  p.lead
+    | A chapter of the bible (ESV version) a day to your email!
+  if alert
+    .alert.alert-success(role="alert") #{alert}
+  form(action='/', method='POST')
+    .form-group
+      label(for='email') Email address
+      input#email.form-control(type='email', name='email', placeholder='Email', required)
+    .form-group
+      label(for='day') Starting Point
+      select#day.form-control(type='text', disabled)
+        option()
+    button.btn.btn-primary(type='submit') Submit
+
+block scripts
+  script(src='/static/index.js')
+      
+  script(src='https://maps.googleapis.com/maps/api/js?key=' + env.GOOGLE_API_KEY + '&callback=initMap', async='', defer='')

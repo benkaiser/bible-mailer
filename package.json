@@ -1,18 +1,37 @@
 {
-  "name": "geohash-notifier",
+  "name": "bible-mailer",
   "version": "1.0.0",
-  "description": "XKCD Geohash email notification service",
+  "description": "Service to email a chapter of the bible a day",
   "main": "index.js",
   "author": "Benjamin Kaiser",
   "license": "MIT",
   "dependencies": {
     "async": "^2.1.2",
+    "body-parser": "^1.15.2",
+    "dotenv": "^2.0.0",
     "express": "^4.14.0",
-    "geohash-coordinates": "^1.1.6",
     "geolib": "^2.0.21",
-    "mongoose": "^4.6.5"
+    "moment": "^2.15.2",
+    "mongoose": "^4.6.5",
+    "nodemailer": "^2.6.4",
+    "pug": "^2.0.0-beta6"
   },
   "scripts": {
-    "nodemon": "nodemon -x 'node --harmony' index.js"
+    "nodemon": "./node_modules/nodemon/bin/nodemon.js -x 'node --harmony' index.js",
+    "test": "./node_modules/mocha/bin/mocha --harmony --recursive",
+    "start": "node --harmony index.js"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "mockery": "^2.0.0",
+    "nodemon": "^1.11.0",
+    "sinon": "^1.17.6"
+  },
+  "engines": {
+      "node": "8"
+  },
+  "jscsConfig": {
+    "requireTrailingComma": false
   }
 }
