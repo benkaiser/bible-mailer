@@ -14,7 +14,7 @@
     "moment": "^2.15.2",
     "mongoose": "^4.6.5",
     "nodemailer": "^2.6.4",
-    "pug": "^2.0.0-beta6"
+    "pug": "^3.0.1"
   },
   "scripts": {
     "nodemon": "./node_modules/nodemon/bin/nodemon.js -x 'node --harmony' index.js",
