@@ -13,7 +13,7 @@
     "geolib": "^2.0.21",
     "moment": "^2.15.2",
     "mongoose": "^4.6.5",
-    "nodemailer": "^2.6.4",
+    "nodemailer": "^6.4.16",
     "pug": "^2.0.0-beta6"
   },
   "scripts": {
