@@ -6,7 +6,7 @@
   "author": "Benjamin Kaiser",
   "license": "MIT",
   "dependencies": {
-    "async": "^2.1.2",
+    "async": "^2.6.4",
     "body-parser": "^1.15.2",
     "dotenv": "^2.0.0",
     "express": "^4.14.0",
